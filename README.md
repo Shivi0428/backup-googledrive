@@ -18,3 +18,25 @@ This Python script automates the backup of a MySQL database and uploads it to Go
 ## Installation
 
 1. Clone the repository:
+  git clone [https://github.com/Shivi0428/backup-googledrive]
+
+2. Install the dependencies:
+  pip install -r requirements.txt
+
+## Configuration
+
+1. Obtain a service account key file (`service_account.json`) for Google Drive API access.
+2. Replace the placeholder values in the script with your actual details:
+- `SERVICE_ACCOUNT_FILE`: Path to the service account key file.
+- `BACKUP_FOLDER`: Local folder path for storing backups.
+- `GOOGLE_DRIVE_FOLDER_ID`: Google Drive folder ID for storing backups.
+- `DATABASES`: List of MySQL databases to backup.
+- `MYSQLDUMP_PATH`: Path to the `mysqldump` executable.
+
+## Usage
+
+Run the script:
+  python backup_script.py
+## Contributing
+
+Contributions are welcome! Fork the repository, make your changes, and submit a pull request.
